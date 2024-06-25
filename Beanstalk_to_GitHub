@@ -1,0 +1,7 @@
+#Example moving Beanstalk Repo to GitHub
+
+# 1 Checkout the Beanstalk Repo
+git clone --bare git@domain.beanstalkapp.com:/your-repo.git
+
+# 2 Push into your desired GitHub repo. (Please note that you must create the github repo prior to this step)
+git push --mirror git@github.com:your-account/your-repo.git
